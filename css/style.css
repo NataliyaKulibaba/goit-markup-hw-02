@@ -1,0 +1,47 @@
+/* цвет основного фона #ffffff */
+/* цвет дополнительного фона #F5F4FA */
+/* цвет футера #2F303A */
+/* цвет основного текста #212121 */
+/* цвет вторичного текста #757575 */
+/* цвет акцент #2196F3 */
+/* цвет контактов rgba(255,255,255,0.6) */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--title-text-color);
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+/* навигация */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
