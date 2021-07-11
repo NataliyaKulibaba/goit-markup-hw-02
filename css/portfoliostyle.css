@@ -1,11 +1,3 @@
-/* цвет основного фона #ffffff */
-/* цвет дополнительного фона #F5F4FA */
-/* цвет футера #2F303A */
-/* цвет основного текста #212121 */
-/* цвет вторичного текста #757575 */
-/* цвет акцент #2196F3 */
-/* цвет контактов rgba(255,255,255,0.6) */
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -25,13 +17,13 @@ a {
   text-decoration: none;
 }
 
+/* Хедер */
 .logo {
   color: var(--accent-color);
 }
 .logo .logo-studio {
   color: var(--title-text-color);
 }
-
 /* навигация */
 .site-nav .link {
   color: var(--title-text-color);
@@ -49,33 +41,20 @@ a {
   color: var(--accent-color);
 }
 
-.hero-title {
-  color: var(--title-text-color);
-}
-
-/* Секции */
+/* Секция */
 .section-title {
   color: var(--title-text-color);
 }
-.advantages-title,
-.command-title {
-  color: var(--title-text-color);
-}
-/* Hero */
-.hero {
-  background-color: #2f303a;
-}
-.hero-title {
-  color: #ffffff;
-}
-.hero-button {
-  background-color: var(--accent-color);
-}
-.hero .text {
-  color: #ffffff;
-}
-.section-command {
+.section-button {
   background-color: #f5f4fa;
+  color: var(--title-text-color: );
+}
+.section-button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.section-text {
+  color: var(--primary-text-color);
 }
 
 /* Футер */
