@@ -23,12 +23,12 @@ body {
 }
 
 .logo {
+  color: var(--accent-color);
+}
+.logo .logo-studio {
   color: var(--title-text-color);
 }
 
-.logo:hover {
-  color: var(--accent-color);
-}
 /* навигация */
 .site-nav .link {
   color: var(--title-text-color);
@@ -43,5 +43,53 @@ body {
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Секции */
+.section-title {
+  color: var(--title-text-color);
+}
+.advantages-title,
+.command-title {
+  color: var(--title-text-color);
+}
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+.hero-button {
+  background-color: var(--accent-color);
+}
+.hero .text {
+  color: #ffffff;
+}
+.section-command {
+  background-color: #f5f4fa;
+}
+
+/* Футер */
+.contacts {
+  background-color: #2f303a;
+}
+.contacts .logo-studio {
+  color: #ffffff;
+}
+.address {
+  color: #ffffff;
+}
+.contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-color);
 }
