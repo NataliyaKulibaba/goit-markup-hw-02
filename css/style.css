@@ -26,6 +26,9 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+button {
+  font-family: inherit;
+}
 
 a {
   text-decoration: none;
