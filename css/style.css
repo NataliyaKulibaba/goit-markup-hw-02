@@ -13,8 +13,24 @@
   --primary-white-color: #ffffff;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(231, 238, 138);
+  margin-left: auto;
+  margin-right: auto;
+}
 .list {
   list-style: none;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
@@ -25,9 +41,20 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+  
+  /* margin: 0;
+  padding: 0; */
+/* }
+h1 h2 h3 h4 h5 {
+  margin: 0;
+  padding: 0; */
 }
-button {
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
   font-family: inherit;
+  
+ 
 }
 
 a {
@@ -71,11 +98,21 @@ a {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+header {
+  margin-bottom: 47px;
+}
 /* Герой */
 .hero {
   background-color: #2f303a;
+  display: inline-block;
+  height: 600px;
+  width: 1600px;
+  margin-left: 700;
+  margin-right: 700;
+  margin-bottom: 200;
 }
 .hero-title {
+  display: inline-block;
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -84,15 +121,34 @@ a {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-}
-.hero-button {
-  background-color: var(--accent-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-bottom: 30px;
 
+}
+.hero button {
+  
+  margin-left: 700px;
+ margin-right: 700px;
+margin-bottom: 200px;
+display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+}
+
+  
 }
 .hero .text {
   color: var(--primary-white-color);
-
+  
   font-weight: 700;
   letter-spacing: 0.06em;
   font-size: 16px;
@@ -107,6 +163,8 @@ a {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 .advantages-title {
   color: var(--title-text-color);
@@ -115,6 +173,13 @@ a {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.advantages-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 }
 /* Наша команда */
 
@@ -127,12 +192,16 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .command-text {
+  display: inline-block;
   color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.19px;
+   margin-top: 0px;
+  margin-bottom: 0px;
 }
 /* Футер */
 .contacts {
