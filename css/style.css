@@ -41,34 +41,75 @@ body {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Шапка сайта */
 .logo {
+  display: block;
   color: var(--accent-color);
 
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 
 .logo .logo-studio {
   color: var(--title-text-color);
 }
 
+.logo,
+.logo-studio {
+  display: flex;
+}
+
 /* навигация */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -146,6 +187,40 @@ a {
   margin-top: 0px;
   margin-bottom: 50px;
 }
+.advantages.list {
+  display: flex;
+  margin-bottom: 94px;
+}
+.advantages-title {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+}
+.advantages.list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.works.list .item {
+  widht: calc ((100%-60px)/3);
+  margin-right: 30px;
+}
+.works.list {
+  display: flex;
+}
+.works.list .item:nth-child(3) {
+  margin-right: 30px;
+}
+
+/* .works.list .item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+/* .advantages.list .item:not(:last-childchild) {
+  margin-right: 30px;
+} */
+
+/* weight: 270px;
+  height: 101px;
+}
+
 .advantages-title {
   color: var(--title-text-color);
 
@@ -189,10 +264,24 @@ a {
 .container.command {
   margin-bottom: 0px;
 }
-/* Футер */
-/* .section-command {
-  padding-top: 94px;
+
+.command.list {
+  display: flex;
+}
+/* .command.list .item:not(:last-child) {
+  margin-right: 30px;
 } */
+
+.command.list .item {
+  width: calc ((100%-90px)/4);
+  margin-right: 30px;
+}
+.command.list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* Футер */
+
 .contacts .logo-studio {
   color: var(--primary-white-color);
 }
