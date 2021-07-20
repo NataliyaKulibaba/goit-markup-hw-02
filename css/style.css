@@ -12,7 +12,7 @@
   /* background-color: rgb(231, 238, 138); */
   margin-left: auto;
   margin-right: auto;
-  outline: tomato;
+  outline: 1px solid tomato;
 }
 .list {
   list-style: none;
@@ -126,14 +126,14 @@ p {
   display: inline-block;
   background-color: #2f303a;
   height: 600px;
-  width: 1600px;
+  /* width: 1600px; */
   margin: 0 auto;
   text-align: center;
 }
 .hero-title {
   display: inline-block;
   color: var(--primary-white-color);
-
+  width: 696px;
   font-weight: 900;
   letter-spacing: 0.06em;
   font-size: 44px;
@@ -176,7 +176,9 @@ p {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
+.section.advantages {
+  padding-bottom: 0;
+}
 .section-title {
   color: var(--title-text-color);
 
@@ -189,15 +191,23 @@ p {
 }
 .advantages.list {
   display: flex;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .advantages-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
 }
+.advantages.list .item {
+  display: block;
+  width: 270px;
+  height: 101px;
+}
 .advantages.list .item:not(:last-child) {
   margin-right: 30px;
 }
+
+/* Чем мы занимаемся */
+
 .works.list .item {
   widht: calc ((100%-60px)/3);
   margin-right: 30px;
@@ -209,36 +219,6 @@ p {
   margin-right: 30px;
 }
 
-/* .works.list .item:not(:last-child) {
-  margin-right: 30px;
-} */
-
-/* .advantages.list .item:not(:last-childchild) {
-  margin-right: 30px;
-} */
-
-/* weight: 270px;
-  height: 101px;
-}
-
-.advantages-title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.advantages-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-/* Чем мы занимаемся */
-.works.list {
-  margin-bottom: 50px;
-}
 /* Наша команда */
 
 .section.command {
@@ -253,6 +233,7 @@ p {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .command-text {
   display: inline-block;
   color: var(--primary-text-color);
@@ -268,24 +249,45 @@ p {
 .command.list {
   display: flex;
 }
-/* .command.list .item:not(:last-child) {
-  margin-right: 30px;
-} */
 
 .command.list .item {
   width: calc ((100%-90px)/4);
   margin-right: 30px;
+  background-color: var(--primary-white-color);
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .command.list .item:nth-child(4n) {
   margin-right: 0;
 }
 
 /* Футер */
-
+.section.contacts {
+  background-color: #2f303a;
+  /* height: 252px; */
+}
+/* .container.contacts {
+  display: flex;
+  width: 231px;
+} */
+.section.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section.contacts .address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  margin-top: 20px;
+}
+.address .item {
+  color: var(--primary-white-color);
+}
 .contacts .logo-studio {
   color: var(--primary-white-color);
 }
-.address {
+.address.link {
   color: var(--primary-white-color);
 }
 .contacts-link {
